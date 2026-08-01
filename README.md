@@ -69,12 +69,12 @@ Whether you have wandered here by chance or returned seeking another chapter, we
 
 
 ```text
-the-dietrich-files/
-
-client/
-server/
-
-README.md
+the-dietrich-files
+│
+├── client/
+├── server/
+├── README.md
+└── .gitignore
 ```
 
 ---
