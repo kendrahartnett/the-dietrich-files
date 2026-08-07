@@ -5,7 +5,7 @@
 
 A full-stack web application showcasing the world of Dietrich Black through artwork, stories, music, and interactive experiences.
 
-![Dietrich Black](./images/dietrichblack.png)
+![Dietrich Black](./images/dietrichtapes.png)
 
 ***Dedicated to the world of Dietrich Black.***
 
@@ -82,6 +82,14 @@ the-dietrich-files
 ## Gallery
 
 *Screenshots Coming Soon*
+
+![Dietrich Black](./images/deitrichshome.png)
+
+![Dietrich Black](./images/dietrichblack.png)
+
+
+
+
 
 ---
 
