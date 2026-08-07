@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "dietrich";
+  default: true;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(18.3% 0.022 45.635);
+  --color-base-200: oklch(3.8% 0 360);
+  --color-base-300: oklch(13% 0.028 261.692);
+  --color-base-content: oklch(72.354% 0.092 79.129);
+  --color-primary: oklch(26% 0.079 36.259);
+  --color-primary-content: oklch(71.5% 0.072 62.756);
+  --color-secondary: oklch(4.8% 0.084 25.200);
+  --color-secondary-content: oklch(53.8% 0.193 85.200);
+  --color-accent: oklch(34.9% 0.306 31);
+  --color-accent-content: oklch(64.5% 0.265 87.100);
+  --color-neutral: oklch(16.51% 0.015 326.261);
+  --color-neutral-content: oklch(83.302% 0.003 326.261);
+  --color-info: oklch(79.49% 0.063 184.558);
+  --color-info-content: oklch(15.898% 0.012 184.558);
+  --color-success: oklch(74.722% 0.072 131.116);
+  --color-success-content: oklch(14.944% 0.014 131.116);
+  --color-warning: oklch(64.5% 0.249 87.722);
+  --color-warning-content: oklch(17.63% 0.028 87.722);
+  --color-error: oklch(42.5% 0.370 31.871);
+  --color-error-content: oklch(15.463% 0.025 31.871);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 1;
+}
+
+/* daisyui: {
+  themes: [
+    {
+      dietrichdark: {
+        "primary": "#8A1A24",      // blood red — main actions, active states
+        "secondary": "#B8935A",    // aged brass — headings, secondary CTAs
+        "accent": "#D4AF6A",       // gold leaf — highlights, hover glow
+        "neutral": "#241E19",      // umber card bg
+        "base-100": "#0C0A08",     // page background (void)
+        "base-200": "#171310",     // charcoal — nav, footer
+        "base-300": "#4A453C",     // ash — borders/dividers
+        "base-content": "#E8DCC4", // parchment — body text
+        "info": "#2B3A3C",
+        "success": "#7A6F56",
+        "warning": "#D4AF6A",
+        "error": "#8A1A24",
+      },
+    },
+  ],
+}/ */
+
+/* FONTS */
+
+.jim-nightshade-regular {
+  font-family: "Jim Nightshade", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.im-fell {
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

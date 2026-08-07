@@ -1,9 +1,11 @@
 import "./App.css";
+import "./index.css";
+import LandingPage from "./pages/LandingPage.jsx";
 
 function App() {
   return (
     <>
-      <h1>The Dietrich Files</h1>
+      <LandingPage />
     </>
   );
 }
