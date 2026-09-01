@@ -6,8 +6,8 @@ import LandingPageNew from "./pages/LandingPageNew.jsx";
 function App() {
   return (
     <>
-      {/* <LandingPage /> */}
-      <LandingPageNew />
+      <LandingPage />
+      {/* <LandingPageNew /> */}
     </>
   );
 }

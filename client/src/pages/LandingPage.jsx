@@ -4,21 +4,21 @@ const sections = [
   {
     to: "/gallery",
     label: "Artwork Gallery",
-    blurb: "Illustrations from decades of imagination given canvas.",
+    blurb: "Portraits and illustrations, rendered by a hand that has had a very long time to practice.",
   },
   {
     to: "/stories",
-    label: "Story Archive",
-    blurb: "The tales that built a mythology, chapter by chapter.",
+    label: "Journal Archive",
+    blurb: "Private entries, transcribed exactly as they were written, spanning more than 200 years.",
   },
   {
     to: "/music",
     label: "Music Collection",
-    blurb: "Melodies that gave the archive its voice.",
+    blurb: "Recordings and compositions etched in time, each note carrying an echo from a life that refused to fade.",
   },
   {
     to: "/lore",
-    label: "Character Lore",
+    label: "The Artist's Lore",
     blurb: "Dietrich Black, and the world that surrounds him.",
   },
 ];
@@ -58,11 +58,14 @@ export default function LandingPage() {
         </h1>
 
         <p className="mt-4 max-w-xl text-lg sm:text-xl italic text-base-content/80 jim-nightshade-regular">
-          &ldquo;Some stories are written in ink. Others are written in
-          blood.&rdquo;
+          &ldquo; for those who already know his name &rdquo;
         </p>
 
         <div className="mt-8 max-w-3xl space-y-4 text-lg leading-relaxed text-base-content/90 cormorant-garamond">
+
+        {/* <p> There are worlds that exist only in memory, whispered from one
+            generation to the next. This one was left behind, sealed, for
+            whoever finds their way to it.</p> */}
           <p>
             There are worlds that exist only in memory, whispered from one
             generation to the next. Others are born from canvas, music, and the
