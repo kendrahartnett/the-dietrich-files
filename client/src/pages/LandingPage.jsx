@@ -58,7 +58,9 @@ export default function LandingPage() {
         </h1>
 
         <p className="mt-4 max-w-xl text-lg sm:text-xl italic text-base-content/80 jim-nightshade-regular">
-          &ldquo; for those who already know his name &rdquo;
+          &ldquo; Some stories are written in ink. Others are written in blood.  &rdquo;
+          
+          {/* for those who already know his name */}
         </p>
 
         <div className="mt-8 max-w-3xl space-y-4 text-lg leading-relaxed text-base-content/90 cormorant-garamond">
