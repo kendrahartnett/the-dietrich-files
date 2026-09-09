@@ -63,7 +63,7 @@ export default function LandingPage() {
           {/* for those who already know his name */}
         </p>
 
-        <div className="mt-8 max-w-3xl space-y-4 text-lg leading-relaxed text-base-content/90 cormorant-garamond">
+        <div className="mt-8 max-w-3xl space-y-4 text-md lg:text-lg leading-relaxed text-base-content/90 cormorant-garamond">
 
         {/* <p> There are worlds that exist only in memory, whispered from one
             generation to the next. This one was left behind, sealed, for

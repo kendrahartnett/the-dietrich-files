@@ -5,6 +5,7 @@ import StoriesPage from './pages/StoriesPage.jsx';
 import MusicPage from './pages/MusicPage.jsx';
 import GalleryPage from './pages/GalleryPage.jsx';
 import LorePage from './pages/LorePage.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
 import './index.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Route path="music" element={<MusicPage />} />
               <Route path="gallery" element={<GalleryPage />} />
               <Route path="lore" element={<LorePage />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </>
         }
