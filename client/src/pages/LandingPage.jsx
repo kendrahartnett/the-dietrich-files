@@ -53,11 +53,11 @@ export default function LandingPage() {
     <div className="min-h-screen bg-base-200 text-base-content">
       {/* Hero */}
       <section className="flex flex-col items-center justify-center px-6 pt-16 pb-20 text-center">
-        <h1 className="text-4xl sm:text-6xl text-primary-content im-fell">
+        <h1 className="text-5xl sm:text-6xl text-primary-content im-fell">
           Dietrich Black
         </h1>
 
-        <p className="mt-4 max-w-xl text-lg sm:text-xl italic text-base-content/80 jim-nightshade-regular">
+        <p className="mt-4 max-w-2xl text-lg sm:text-xl italic text-base-content/80 special-elite-regular">
           &ldquo; Some stories are written in ink. Others are written in blood.  &rdquo;
           
           {/* for those who already know his name */}
@@ -101,7 +101,7 @@ export default function LandingPage() {
             <h2 className="text-2xl text-secondary-content cormorant-garamond font-semibold transition-colors group-hover:text-accent-content/80">
               {s.label}
             </h2>
-            <p className="mt-3 text-sm text-base-content/70 cormorant-garamond transition-colors">
+            <p className="mt-3 text-md lg:text-lg text-base-content/70 cormorant-garamond transition-colors">
               {s.blurb}
             </p>
           </Link>
@@ -110,13 +110,7 @@ export default function LandingPage() {
 
       {/* Footer dedication */}
       <footer className="border-t border-base-300 px-6 py-10 text-center">
-        <p
-          className="text-sm italic text-base-content/60"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
-        >
-          May every visitor discover something that lingers with them long after
-          they leave these pages.
-        </p>
+    
       </footer>
     </div>
   );

@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-5xl items-center justify-between">
         <NavLink
           to="/"
-          className="cinzel-decorative-bold text-lg tracking-wide text-primary-content im-fell"
+          className="cinzel-decorative-bold text-xl tracking-wide text-primary-content im-fell"
           onClick={() => setOpen(false)}
         >
           Dietrich Black
