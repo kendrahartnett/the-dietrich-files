@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const archive = [
   {
     to: '/stories',
-    label: 'Journals',
+    label: 'Memiors',
     detail:
       'Private entries, transcribed exactly as they were written, spanning more than a century.',
   },
@@ -12,7 +12,7 @@ const archive = [
     to: '/music',
     label: 'Music',
     detail:
-      'Recordings and compositions, preserved from a life measured in decades, beyond the reach of any calendar.',
+      'Recordings and compositions etched in time, each note carrying an echo from a life that refused to fade.',
   },
   {
     to: '/gallery',
