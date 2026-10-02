@@ -32,6 +32,19 @@ export const tracks = [
     duration: 413.883,
     displayOrder: 1,
   },
+  {
+    id: "track-002",
+    title: "The Steps Up There",
+    type: "audio",
+    creator: "",
+    year: null,
+    description: "",
+    fileUrl: "../assets/audio/track-002-the-steps-up-there.wav",
+    thumbnailUrl: null,
+    category: "",
+    duration: 315.305,
+    displayOrder: 2,
+  },
 ];
 
 export const films = [];

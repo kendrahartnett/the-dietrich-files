@@ -1,4 +1,4 @@
-import { tracks } from "../data/catalog.js";
+import { tracks } from "../data/catalog.js?v=2";
 
 const audio = document.querySelector("#audio");
 const playButton = document.querySelector(".play");
@@ -126,6 +126,7 @@ playButton?.addEventListener("click", async () => {
 
   if (audio.paused) {
     try {
+      if (audio.ended || audio.currentTime >= audio.duration) audio.currentTime = 0;
       await audio.play();
       playButton.textContent = "Ⅱ";
       playButton.setAttribute("aria-label", `Pause ${trackTitle?.textContent || "recording"}`);
@@ -148,11 +149,14 @@ audio?.addEventListener("timeupdate", () => {
   if (timeDisplay) timeDisplay.textContent = formatTime(audio.currentTime);
 });
 
-seekControl?.addEventListener("input", () => {
+function seekToControlValue() {
   if (!audio || !Number.isFinite(audio.duration)) return;
   audio.currentTime = (Number(seekControl.value) / 100) * audio.duration;
   if (timeDisplay) timeDisplay.textContent = formatTime(audio.currentTime);
-});
+}
+
+seekControl?.addEventListener("input", seekToControlValue);
+seekControl?.addEventListener("change", seekToControlValue);
 
 audio?.addEventListener("loadedmetadata", () => {
   if (timeDisplay) timeDisplay.textContent = `0:00 / ${formatTime(audio.duration)}`;
