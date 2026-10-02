@@ -47,4 +47,33 @@ export const tracks = [
   },
 ];
 
-export const films = [];
+export const films = [
+  {
+    id: "film-001",
+    title: "West Coast",
+    type: "film",
+    creator: "",
+    year: null,
+    description: "",
+    fileUrl: "../assets/film/film-001-west-coast.mp4",
+    posterUrl: null,
+    thumbnailUrl: null,
+    category: "",
+    duration: 300,
+    displayOrder: 1,
+  },
+  {
+    id: "film-002",
+    title: "City in Colors",
+    type: "film",
+    creator: "",
+    year: null,
+    description: "",
+    fileUrl: "../assets/film/film-002-city-in-colors.mp4",
+    posterUrl: null,
+    thumbnailUrl: null,
+    category: "",
+    duration: 220.075,
+    displayOrder: 2,
+  },
+];
