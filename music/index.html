@@ -1,1 +1,47 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Private recordings and unfinished nocturnes."><title>Music — The Dietrich Files</title><link rel="icon" href="../favicon.svg"><link rel="stylesheet" href="../styles.css"></head><body><div class="noise"></div><div class="shell"><header class="site-head"><a class="monogram" href="../gallery/">D<small>THE FILES</small></a><nav class="nav"><a href="../gallery/">Gallery</a><a href="../music/">Music</a><a href="../film/">Film</a></nav><button class="menu" aria-label="Open navigation" aria-expanded="false"><span></span></button><span class="head-mark">Room II · Recordings</span></header><main class="page"><h1 class="page-title">Sound</h1><div class="player-layout"><section class="player"><audio id="audio"></audio><div><span class="track-no">00</span><h2 class="track-title">Silence</h2><div class="track-meta">Unmarked.</div></div><div class="controls"><button class="play" aria-label="Play">▶</button><div class="timeline"><i></i></div><span class="time">0:00</span></div></section><aside class="upload-card"><h2>Place a recording.</h2><label class="drop">Choose audio<input type="file" accept="audio/*"></label><p class="file-note">Private to this visit</p></aside></div></main><footer class="footer"><span>Private archive</span></footer></div><script src="../app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Private recordings and unfinished nocturnes.">
+  <title>Music — The Dietrich Files</title>
+  <link rel="icon" href="../favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="shell">
+    <header class="site-head">
+      <a class="monogram" href="../gallery/">D<small>THE FILES</small></a>
+      <nav class="nav" aria-label="Primary"><a href="../gallery/">Gallery</a><a href="../music/">Music</a><a href="../film/">Film</a></nav>
+      <button class="menu" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+      <span class="head-mark">Room II · Recordings</span>
+    </header>
+    <main class="page">
+      <h1 class="page-title">Sound</h1>
+      <div class="player-layout">
+        <section class="player" aria-label="Audio player">
+          <audio id="audio" preload="metadata"></audio>
+          <div>
+            <span class="track-no">00</span>
+            <h2 class="track-title">Silence</h2>
+            <div class="track-meta">Unmarked.</div>
+          </div>
+          <div class="controls">
+            <button class="play" type="button" aria-label="Play" disabled>▶</button>
+            <div class="timeline" aria-hidden="true"><i></i></div>
+            <span class="time">0:00</span>
+          </div>
+          <p class="player-status" id="track-status" aria-live="polite"></p>
+        </section>
+        <aside class="track-panel" aria-label="Track list">
+          <div class="track-list" id="track-list"></div>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer"><span>Private archive</span></footer>
+  </div>
+  <script src="../app.js"></script>
+  <script type="module" src="../js/music.js"></script>
+</body>
+</html>
