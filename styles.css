@@ -12,17 +12,17 @@
 .page-title em{font-family:'Cormorant Garamond',serif;font-style:italic;letter-spacing:-.02em}
 .art-info h2,.track-title,.empty-film b,.contact blockquote,.not-found h1{font-family:'UnifrakturMaguntia',serif}
 .footer{justify-content:flex-end}
-.door:after{content:'✦';position:absolute;right:42px;top:50%;width:31px;height:31px;border:1px solid #3a2523;border-radius:50%;display:grid;place-items:center;color:#6f4c3f;font-size:9px;box-shadow:0 0 22px rgba(173,11,25,.12)}
+.door:after{content:none}
+.door-secret{position:absolute;right:10%;top:46%;width:110px;height:110px;border:0;border-radius:50%;background:transparent;cursor:pointer;transform:translateY(-50%)}
+.door-secret:before{content:'';position:absolute;left:50%;top:50%;width:30px;height:30px;border:1px solid #35282a;border-radius:50%;transform:translate(-50%,-50%);box-shadow:inset 0 0 12px rgba(90,30,35,.12),0 0 18px rgba(80,18,24,.08);transition:border-color .35s,box-shadow .35s,transform .35s}
+.door-secret:after{content:'';position:absolute;left:50%;top:50%;width:3px;height:3px;border-radius:50%;background:#5b3a35;transform:translate(-50%,-50%);transition:background .35s,box-shadow .35s}
+.door-secret:hover,.door-secret:focus-visible{outline:none;background:transparent}
+.door-secret:hover:before,.door-secret:focus-visible:before{border-color:#72504b;box-shadow:inset 0 0 14px rgba(120,36,43,.2),0 0 24px rgba(120,20,30,.16);transform:translate(-50%,-50%) scale(1.08)}
+.door-secret:hover:after,.door-secret:focus-visible:after{background:#a66d60;box-shadow:0 0 9px rgba(166,109,96,.45)}
 .enter{background:#080606;border:1px solid #4a342d;font-family:'UnifrakturMaguntia',serif;font-style:normal;font-size:34px;letter-spacing:.08em;padding:18px 34px 20px;box-shadow:0 12px 50px #000}
 .enter:after{position:absolute;left:50%;top:100%;margin:0}
 .enter:hover,.enter:focus-visible{border-color:#806452;color:#e2d3a2;letter-spacing:.14em;outline:none}
 .enter:hover:after,.enter:focus-visible:after{height:50px}
-.seal{width:78px;height:78px;padding:0;border:1px solid #b32a31;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 34% 28%,#b62630 0,#8e101b 28%,#59070e 68%,#300305 100%);box-shadow:inset 0 0 0 5px rgba(43,0,4,.3),inset -9px -12px 20px rgba(31,0,3,.65),inset 7px 8px 14px rgba(218,60,66,.18),0 8px 22px #000,0 0 34px rgba(146,8,18,.2)}
-.seal span{width:39px;height:39px;border:1px solid rgba(231,170,133,.22);border-radius:50%;position:relative;transform:rotate(-8deg)}
-.seal span:before,.seal span:after{content:'';position:absolute;inset:8px;border-top:1px solid rgba(235,181,143,.22);border-bottom:1px solid rgba(43,0,4,.55);transform:rotate(45deg)}
-.seal span:after{transform:rotate(-45deg)}
-.seal:hover,.seal:focus-visible{width:82px;height:82px;letter-spacing:0;border-color:#e15b60;filter:brightness(1.12);transform:rotate(3deg);outline:1px solid #8d3034;outline-offset:8px}
-.seal:after{top:calc(100% + 10px)}
 
 /* Quiet archive typography */
 .monogram{font-family:Italiana,serif;font-size:24px;letter-spacing:.08em}
