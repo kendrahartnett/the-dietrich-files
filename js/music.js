@@ -2,7 +2,7 @@ import { tracks } from "../data/catalog.js";
 
 const audio = document.querySelector("#audio");
 const playButton = document.querySelector(".play");
-const progressBar = document.querySelector(".timeline i");
+const seekControl = document.querySelector(".timeline");
 const timeDisplay = document.querySelector(".time");
 const trackNumber = document.querySelector(".track-no");
 const trackTitle = document.querySelector(".track-title");
@@ -58,7 +58,11 @@ function selectTrack(track, position) {
     playButton.textContent = "▶";
     playButton.setAttribute("aria-label", `Play ${trackName(track, position)}`);
   }
-  if (progressBar) progressBar.style.width = "0%";
+  if (seekControl) {
+    seekControl.value = "0";
+    seekControl.style.setProperty("--progress", "0%");
+    seekControl.setAttribute("aria-label", `Seek through ${trackName(track, position)}`);
+  }
   if (timeDisplay) timeDisplay.textContent = "0:00";
 
   setStatus("");
@@ -137,7 +141,16 @@ playButton?.addEventListener("click", async () => {
 
 audio?.addEventListener("timeupdate", () => {
   const progress = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
-  if (progressBar) progressBar.style.width = `${progress}%`;
+  if (seekControl) {
+    seekControl.value = String(progress);
+    seekControl.style.setProperty("--progress", `${progress}%`);
+  }
+  if (timeDisplay) timeDisplay.textContent = formatTime(audio.currentTime);
+});
+
+seekControl?.addEventListener("input", () => {
+  if (!audio || !Number.isFinite(audio.duration)) return;
+  audio.currentTime = (Number(seekControl.value) / 100) * audio.duration;
   if (timeDisplay) timeDisplay.textContent = formatTime(audio.currentTime);
 });
 

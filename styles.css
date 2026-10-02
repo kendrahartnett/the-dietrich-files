@@ -72,4 +72,11 @@
 .track-list-empty{margin:0;padding:28px 4px;border-bottom:1px solid var(--line);color:#5e574a;font-style:italic}
 .player-status{min-height:1.4em;margin:18px 0 0;color:#756b59;font-size:12px;letter-spacing:.08em}
 .play:disabled{cursor:not-allowed;opacity:.35}
+.timeline{-webkit-appearance:none;appearance:none;height:18px;background:transparent;cursor:pointer;flex:1;margin:0;padding:0}
+.timeline::-webkit-slider-runnable-track{height:1px;background:linear-gradient(to right,var(--blood) 0,var(--blood) var(--progress,0%),#312a25 var(--progress,0%),#312a25 100%)}
+.timeline::-moz-range-track{height:1px;background:#312a25}
+.timeline::-moz-range-progress{height:1px;background:var(--blood)}
+.timeline::-webkit-slider-thumb{-webkit-appearance:none;width:9px;height:9px;margin-top:-4px;border:1px solid #594b3c;border-radius:50%;background:#080706}
+.timeline::-moz-range-thumb{width:9px;height:9px;border:1px solid #594b3c;border-radius:50%;background:#080706}
+.timeline:focus-visible{outline:1px solid #594b3c;outline-offset:7px}
 @media(max-width:800px){.track-panel{margin-top:6px}.track-list-item{padding:16px 4px}}

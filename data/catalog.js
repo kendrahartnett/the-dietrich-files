@@ -18,6 +18,20 @@ export const artworks = [
   },
 ];
 
-export const tracks = [];
+export const tracks = [
+  {
+    id: "track-001",
+    title: "Planet Fantastic",
+    type: "audio",
+    creator: "",
+    year: null,
+    description: "",
+    fileUrl: "../assets/audio/track-001-planet-fantastic.wav",
+    thumbnailUrl: null,
+    category: "",
+    duration: 413.883,
+    displayOrder: 1,
+  },
+];
 
 export const films = [];
