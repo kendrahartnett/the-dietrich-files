@@ -80,3 +80,7 @@
 .timeline::-moz-range-thumb{width:9px;height:9px;border:1px solid #594b3c;border-radius:50%;background:#080706}
 .timeline:focus-visible{outline:1px solid #594b3c;outline-offset:7px}
 @media(max-width:800px){.track-panel{margin-top:6px}.track-list-item{padding:16px 4px}}
+
+.film-list{display:grid;gap:8px;min-width:220px}.film-list-item{display:flex;gap:12px;align-items:baseline;width:100%;border:1px solid transparent;background:transparent;color:var(--dim);padding:10px 0;text-align:left;cursor:pointer}.film-list-item span{font-size:10px;letter-spacing:.16em}.film-list-item strong{font-weight:400}.film-list-item:hover,.film-list-item.active{border-color:var(--line);color:var(--paper);padding-left:12px}.film-list-item.active{border-left-color:var(--blood)}
+
+.video-stage,.film-actions{width:min(100%,1180px);margin-left:auto;margin-right:auto}
