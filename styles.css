@@ -101,3 +101,12 @@
   .door-secret{right:4%;width:90px;height:90px}
   .threshold{font-size:7px;letter-spacing:.22em}
 }
+
+/* The page beyond the entrance intentionally has no desktop site header. */
+.archive-home{min-height:100svh;display:grid;place-items:center;padding:48px 24px;background:radial-gradient(ellipse at center,#130c0b 0,#050505 64%,#000 100%)}
+.archive-home-links{width:min(440px,100%);display:grid;border-top:1px solid var(--line)}
+.archive-home-links a{display:flex;align-items:center;justify-content:space-between;min-height:88px;border-bottom:1px solid var(--line);color:var(--dim);font-size:clamp(24px,3vw,36px);font-family:Italiana,serif;letter-spacing:.08em;transition:color .25s,padding .25s,border-color .25s}
+.archive-home-links a::after{content:'↗';font-family:'Cormorant Garamond',serif;font-size:21px;color:#51453a;transition:transform .25s,color .25s}
+.archive-home-links a:hover,.archive-home-links a:focus-visible{padding-left:14px;color:var(--paper);border-bottom-color:#5b2b2c;outline:none}
+.archive-home-links a:hover::after,.archive-home-links a:focus-visible::after{color:var(--paper);transform:translate(4px,-4px)}
+@media(max-width:480px){.archive-home{place-items:start center;padding:18svh 24px 34px}.archive-home-links a{min-height:76px;font-size:28px}}
