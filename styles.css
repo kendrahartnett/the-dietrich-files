@@ -84,3 +84,20 @@
 .film-list{display:grid;gap:8px;min-width:220px}.film-list-item{display:flex;gap:12px;align-items:baseline;width:100%;border:1px solid transparent;background:transparent;color:var(--dim);padding:10px 0;text-align:left;cursor:pointer}.film-list-item span{font-size:10px;letter-spacing:.16em}.film-list-item strong{font-weight:400}.film-list-item:hover,.film-list-item.active{border-color:var(--line);color:var(--paper);padding-left:12px}.film-list-item.active{border-left-color:var(--blood)}
 
 .video-stage,.film-actions{width:min(100%,1180px);margin-left:auto;margin-right:auto}
+
+/* Landing page: keep the sealed entrance balanced and reachable on small screens. */
+@media(max-width:800px){
+  .landing{height:100svh;min-height:100svh;padding:24px 18px 74px}
+  .door{width:min(82vw,390px);height:min(74svh,560px);max-height:calc(100svh - 112px)}
+  .door:before{inset:18px}
+  .door-secret{right:6%;top:48%;width:96px;height:96px}
+  .threshold{bottom:max(18px,env(safe-area-inset-bottom));width:100%;padding:0 18px;text-align:center;font-size:8px;letter-spacing:.28em;line-height:1.5}
+}
+
+@media(max-width:380px){
+  .landing{padding-bottom:66px}
+  .door{width:86vw;height:min(70svh,500px);max-height:calc(100svh - 96px)}
+  .door:before{inset:14px}
+  .door-secret{right:4%;width:90px;height:90px}
+  .threshold{font-size:7px;letter-spacing:.22em}
+}
